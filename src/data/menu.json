@@ -1,12 +1,73 @@
 {
-	"hot": [
-		{ "title": "اسپرسو", "description": "قهوه غلیظ با عطر بی‌نظیر" },
-		{ "title": "لاته نعناع", "description": "شیر گرم با طعم نعناع تازه" },
-		{ "title": "چای سبز", "description": "چای سبز طبیعی با عطر لیمو" }
+	"breakfast": [
+		{ "title": "املت کلاسیک", "description": "" },
+		{ "title": "املت قارچ و اسفناج", "description": "" },
+		{ "title": "املت سوسیس و تخم مرغ", "description": "" },
+		{ "title": "نیمرو", "description": "" },
+		{ "title": "تست پنیر و گردو", "description": "" },
+		{ "title": "تست بادوم زمینی", "description": "" },
+		{ "title": "تست شکلات", "description": "" }
 	],
-	"desserts": [
-		{ "title": "کیک نعناع", "description": "کیک خانگی با طعم نعناع و شکلات" },
-		{ "title": "براونی", "description": "براونی شکلاتی نرم و خوشمزه" }
+	"hotcoffee": [
+		{ "title": "اسپرسو لاین روبوستا", "description": "" },
+		{ "title": "اسپرسو لاین عربیکا", "description": "" },
+		{ "title": "اسپرسو رومانو", "description": "" },
+		{ "title": "هانی اسپرسو", "description": "" },
+		{ "title": "کورتادو", "description": "" },
+		{ "title": "آمریکانو", "description": "" },
+		{ "title": "قهوه ترک", "description": "" },
+		{ "title": "لاته", "description": "" },
+		{ "title": "لاته طعم دار", "description": "" },
+		{ "title": "کاپوچینو", "description": "" },
+		{ "title": "کارامل ماکیاتو", "description": "" },
+		{ "title": "موکا", "description": "" },
+		{ "title": "ماسا اسپرسو", "description": "" }
+	],
+	"hot": [
+		{ "title": "چای دمی", "description": "" },
+		{ "title": "چای سبز", "description": "" },
+		{ "title": "چای ماسالا", "description": "" },
+		{ "title": "چای چرک", "description": "" },
+		{ "title": "هات چاکلت دارک", "description": "" },
+		{ "title": "هات چاکلت پرمیوم", "description": "" },
+		{ "title": "هات چاکلت طعم دار", "description": "" },
+		{ "title": "پینک چاکلت", "description": "" },
+		{ "title": "وایت چاکلت", "description": "" },
+		{ "title": "کافی میکس", "description": "" },
+		{ "title": "دمنوش کلسترول", "description": "" },
+		{ "title": "دمنوش آرامش", "description": "" },
+		{ "title": "دمنوش گوارش", "description": "" },
+		{ "title": "دمنوش سیب به", "description": "" }
+	],
+	"ice": [
+		{ "title": "آیس اسپرسو", "description": "" },
+		{ "title": "آیس آمریکانو", "description": "" },
+		{ "title": "آیس کارامل ماکیاتو", "description": "" },
+		{ "title": "آیس لاته", "description": "" },
+		{ "title": "آیس لاته طعم دار", "description": "" },
+		{ "title": "آیس موکا", "description": "" },
+		{ "title": "آیس پینک چاکلت", "description": "" },
+		{ "title": "آیس وایت چاکلت", "description": "" },
+		{ "title": "آفوگانو", "description": "" },
+		{ "title": "آب هندونه", "description": "" },
+		{ "title": "آب طالبی", "description": "" }
+	],
+	"shake": [
+		{ "title": "شیک نوستالژی", "description": "" },
+		{ "title": "شیک موز شکلات", "description": "" },
+		{ "title": "شیک پی نات", "description": "" },
+		{ "title": "شیک قهوه", "description": "" },
+		{ "title": "کافه گلاسه", "description": "" },
+		{ "title": "شکلات گلاسه", "description": "" },
+		{ "title": "آیس کارسائو", "description": "" },
+		{ "title": "آیس بری", "description": "" },
+		{ "title": "موهیتو", "description": "" },
+		{ "title": "رد موهیتو", "description": "" }
+	],
+	"cake": [
+		{ "title": "کیک شکلات فندق", "description": "" },
+		{ "title": "کیک سیب گردو", "description": "" },
+		{ "title": "چیزکیک سن سباستین", "description": "" }
 	]
 }
 

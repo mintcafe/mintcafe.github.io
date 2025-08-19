@@ -12,7 +12,6 @@ const Home: Component = () => {
       <Header />
       <About />
       <Menu />
-      <Gallery />
       <Contact />
       <Footer />
     </div>
