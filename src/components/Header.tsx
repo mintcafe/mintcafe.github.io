@@ -1,7 +1,8 @@
-import { Component, onCleanup, onMount } from "solid-js";
+import { Component, createSignal, onCleanup, onMount } from "solid-js";
 import * as THREE from "three";
 
 const Header: Component = () => {
+  const [isMobileOpen, setIsMobileOpen] = createSignal(false);
   onMount(() => {
     const canvas = document.getElementById(
       "threejs-canvas"
@@ -114,24 +115,100 @@ const Header: Component = () => {
         class="absolute inset-0 w-full h-full -z-10 pointer-events-none"
       ></canvas>
       <div class="absolute inset-0 bg-green-900 bg-opacity-20 z-0 pointer-events-none"></div>
-      <nav class="absolute top-0 left-0 right-0 flex justify-center space-x-6 pt-4 z-20">
-        <a href="#" class="text-white hover:text-green-300">
-          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.58 8.06 8.24 8.88v-6.28H7.5v-2.6h2.78V9.72c0-2.74 1.67-4.24 4.12-4.24 1.17 0 2.18.09 2.47.13v2.87h-1.7c-1.33 0-1.59.63-1.59 1.56v2.05h3.18l-.42 2.6h-2.76v6.28c4.66-.82 8.24-4.47 8.24-8.88 0-5.5-4.46-9.96-9.96-9.96z" />
-          </svg>
-        </a>
-        <a href="#" class="text-white hover:text-green-300">
-          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2.04c-5.51 0-9.96 4.45-9.96 9.96 0 4.41 3.58 8.06 8.24 8.88v-6.28H7.5v-2.6h2.78V9.72c0-2.74 1.67-4.24 4.12-4.24 1.17 0 2.18.09 2.47.13v2.87h-1.7c-1.33 0-1.59.63-1.59 1.56v2.05h3.18l-.42 2.6h-2.76v6.28c4.66-.82 8.24-4.47 8.24-8.88 0-5.51-4.45-9.96-9.96-9.96z" />
-          </svg>
-        </a>
-        <a href="#" class="text-white hover:text-green-300">
-          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2.04c-5.51 0-9.96 4.45-9.96 9.96 0 4.41 3.58 8.06 8.24 8.88v-6.28H7.5v-2.6h2.78V9.72c0-2.74 1.67-4.24 4.12-4.24 1.17 0 2.18.09 2.47.13v2.87h-1.7c-1.33 0-1.59.63-1.59 1.56v2.05h3.18l-.42 2.6h-2.76v6.28c4.66-.82 8.24-4.47 8.24-8.88 0-5.51-4.45-9.96-9.96-9.96z" />
-          </svg>
-        </a>
+      <nav class="absolute top-0 left-0 right-0 z-20">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between relative">
+          <a href="#" class="text-white text-2xl font-extrabold tracking-tight">
+            کافه نعناع
+          </a>
+          <ul class="hidden md:flex items-center gap-6 text-white/90">
+            <li>
+              <a href="#about" class="hover:text-white">
+                درباره ما
+              </a>
+            </li>
+            <li>
+              <a href="#menu" class="hover:text-white">
+                منو
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" class="hover:text-white">
+                گالری
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-white">
+                تماس
+              </a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:text-green-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
+            aria-expanded={isMobileOpen() ? "true" : "false"}
+            aria-controls="mobile-nav"
+            onClick={() => setIsMobileOpen(!isMobileOpen())}
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          {isMobileOpen() && (
+            <ul
+              id="mobile-nav"
+              class="md:hidden absolute top-full right-4 left-4 bg-white/90 backdrop-blur text-green-900 rounded-xl shadow-lg p-4 mt-2 space-y-2"
+            >
+              <li>
+                <a
+                  href="#about"
+                  class="block px-3 py-2 rounded hover:bg-green-50"
+                  onClick={() => setIsMobileOpen(false)}
+                >
+                  درباره ما
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#menu"
+                  class="block px-3 py-2 rounded hover:bg-green-50"
+                  onClick={() => setIsMobileOpen(false)}
+                >
+                  منو
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="block px-3 py-2 rounded hover:bg-green-50"
+                  onClick={() => setIsMobileOpen(false)}
+                >
+                  گالری
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block px-3 py-2 rounded hover:bg-green-50"
+                  onClick={() => setIsMobileOpen(false)}
+                >
+                  تماس
+                </a>
+              </li>
+            </ul>
+          )}
+        </div>
       </nav>
-      <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-center text-white z-10">
+      <div class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white z-10">
         <h1 class="text-5xl md:text-7xl font-extrabold fade-in">کافه نعناع</h1>
         <p class="text-xl md:text-2xl mt-4 fade-in">
           طعم طبیعت، آرامش بی‌نهایت
@@ -154,7 +231,7 @@ const Header: Component = () => {
           </button>
           <div
             id="dropdown-menu"
-            class="dropdown-menu hidden absolute right-full top-0 mr-4 bg-white p-4 rounded-lg shadow-xl text-green-700 flex flex-col space-y-2 min-w-max"
+            class="dropdown-menu hidden absolute right-0 top-full mt-2 md:right-full md:top-0 md:mt-0 md:mr-4 bg-white p-4 rounded-lg shadow-xl text-green-700 flex flex-col space-y-2 min-w-max"
             role="menu"
           >
             <a

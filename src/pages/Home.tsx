@@ -1,15 +1,20 @@
 import { Component } from "solid-js";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
+import About from "../components/About";
+import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home: Component = () => {
   return (
     <div>
       <Header />
+      <About />
       <Menu />
-      <footer class="bg-green-900 text-white text-center py-6">
-        <p>© 2025 کافه نعناع. تمام حقوق محفوظ است.</p>
-      </footer>
+      <Gallery />
+      <Contact />
+      <Footer />
     </div>
   );
 };
