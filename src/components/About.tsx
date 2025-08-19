@@ -4,7 +4,7 @@ const About: Component = () => {
   return (
     <section id="about" class="container mx-auto py-16 px-4 md:px-8">
       <h2 class="text-4xl font-extrabold text-green-900 text-center section-title">
-        درباره کافه نعناع
+        درباره کافه نعنا
       </h2>
       <p class="mt-6 text-lg text-gray-700 text-center max-w-3xl mx-auto">
         در کافه نعناع، هر فنجان روایت‌گر آرامش و طراوت است. ما با استفاده از
