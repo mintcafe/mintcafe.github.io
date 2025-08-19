@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+html, body { font-family: "Vazirmatn", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+
+/* Utilities */
+.hover-scale { transition: transform 200ms ease; }
+.hover-scale:hover { transform: translateY(-2px) scale(1.02); }
+
+.fade-in { opacity: 0; animation: fadeIn 1s ease forwards; }
+@keyframes fadeIn { to { opacity: 1; } }
+
+/* Tabs */
+.tabs .active { border-bottom: 2px solid rgb(21 128 61); color: rgb(21 128 61); }
+
+/* Dropdown */
+.dropdown-menu.hidden { display: none; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Section title underline */
+.section-title { position: relative; display: inline-block; }
+.section-title:after { content: ""; position: absolute; bottom: -8px; right: 0; width: 60%; height: 3px; background: linear-gradient(90deg, rgb(16 185 129), rgb(34 197 94)); border-radius: 9999px; }

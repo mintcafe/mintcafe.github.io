@@ -1,11 +1,8 @@
-import type { Component, ParentProps } from "solid-js";
+import type { Component } from "solid-js";
+import Home from "./pages/Home";
 
-const App: Component = (props: ParentProps) => {
-  return (
-    <div>
-      <main>{props.children}</main>
-    </div>
-  );
+const App: Component = () => {
+  return <Home />;
 };
 
 export default App;
