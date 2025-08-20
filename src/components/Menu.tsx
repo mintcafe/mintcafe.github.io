@@ -1,7 +1,22 @@
 import { Component, createSignal, For } from "solid-js";
 import menuData from "../data/menu.json";
 
-type MenuItem = { title: string; description: string };
+// Map all images in assets/items to URLs so filenames in JSON resolve at runtime
+const itemImageModules = import.meta.glob("../assets/items/*", {
+  eager: true,
+  query: "?url",
+  import: "default",
+}) as Record<string, string>;
+
+const resolveItemImageUrl = (filename: string): string | undefined => {
+  if (!filename) return undefined;
+  const match = Object.entries(itemImageModules).find(([path]) =>
+    path.endsWith(`/${filename}`)
+  );
+  return match ? match[1] : undefined;
+};
+
+type MenuItem = { title: string; description: string; image: string };
 
 const Menu: Component = () => {
   const [activeTab, setActiveTab] = createSignal<
@@ -109,6 +124,14 @@ const Menu: Component = () => {
           <For each={menuData.breakfast as MenuItem[]}>
             {(item) => (
               <div class="bg-white/80 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                {resolveItemImageUrl(item.image) && (
+                  <img
+                    src={resolveItemImageUrl(item.image)}
+                    alt={item.title}
+                    class="w-full h-40 object-cover rounded-xl mb-4"
+                    loading="lazy"
+                  />
+                )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
               </div>
@@ -124,6 +147,14 @@ const Menu: Component = () => {
           <For each={menuData.hotcoffee as MenuItem[]}>
             {(item) => (
               <div class="bg-white/80 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                {resolveItemImageUrl(item.image) && (
+                  <img
+                    src={resolveItemImageUrl(item.image)}
+                    alt={item.title}
+                    class="w-full h-40 object-cover rounded-xl mb-4"
+                    loading="lazy"
+                  />
+                )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
               </div>
@@ -139,6 +170,14 @@ const Menu: Component = () => {
           <For each={menuData.hot as MenuItem[]}>
             {(item) => (
               <div class="bg-white/80 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                {resolveItemImageUrl(item.image) && (
+                  <img
+                    src={resolveItemImageUrl(item.image)}
+                    alt={item.title}
+                    class="w-full h-40 object-cover rounded-xl mb-4"
+                    loading="lazy"
+                  />
+                )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
               </div>
@@ -154,6 +193,14 @@ const Menu: Component = () => {
           <For each={menuData.ice as MenuItem[]}>
             {(item) => (
               <div class="bg-white/80 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                {resolveItemImageUrl(item.image) && (
+                  <img
+                    src={resolveItemImageUrl(item.image)}
+                    alt={item.title}
+                    class="w-full h-40 object-cover rounded-xl mb-4"
+                    loading="lazy"
+                  />
+                )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
               </div>
@@ -169,6 +216,14 @@ const Menu: Component = () => {
           <For each={menuData.shake as MenuItem[]}>
             {(item) => (
               <div class="bg-white/80 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                {resolveItemImageUrl(item.image) && (
+                  <img
+                    src={resolveItemImageUrl(item.image)}
+                    alt={item.title}
+                    class="w-full h-40 object-cover rounded-xl mb-4"
+                    loading="lazy"
+                  />
+                )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
               </div>
@@ -184,6 +239,14 @@ const Menu: Component = () => {
           <For each={menuData.cake as MenuItem[]}>
             {(item) => (
               <div class="bg-white/80 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                {resolveItemImageUrl(item.image) && (
+                  <img
+                    src={resolveItemImageUrl(item.image)}
+                    alt={item.title}
+                    class="w-full h-40 object-cover rounded-xl mb-4"
+                    loading="lazy"
+                  />
+                )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
               </div>

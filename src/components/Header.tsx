@@ -214,11 +214,15 @@ const Header: Component = () => {
         <div class="container mx-auto px-4 py-4 flex items-center justify-between relative">
           <a
             href="#"
-            class="text-green-700 text-2xl font-extrabold tracking-tight"
+            class="text-2xl font-extrabold tracking-tight"
+            style="color: #8E9375;"
           >
             کافه نعنا
           </a>
-          <div class="hidden md:flex items-center gap-6 text-green-700">
+          <div
+            class="hidden md:flex items-center gap-6"
+            style="color: #8E9375;"
+          >
             <ul class="flex items-center gap-6">
               <li>
                 <a href="#about" class="hover:text-green-950">
@@ -290,7 +294,8 @@ const Header: Component = () => {
           </div>
           <button
             type="button"
-            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-green-700 hover:text-green-950 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md hover:text-green-950 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
+            style="color: #8E9375;"
             aria-expanded={isMobileOpen() ? "true" : "false"}
             aria-controls="mobile-nav"
             onClick={() => setIsMobileOpen(!isMobileOpen())}
@@ -312,7 +317,8 @@ const Header: Component = () => {
           {isMobileOpen() && (
             <ul
               id="mobile-nav"
-              class="md:hidden absolute top-full right-4 left-4 bg-white/90 backdrop-blur text-green-900 rounded-xl shadow-lg p-4 mt-2 space-y-2"
+              class="md:hidden absolute top-full right-4 left-4 bg-white/90 backdrop-blur rounded-xl shadow-lg p-4 mt-2 space-y-2"
+              style="color: #8E9375;"
             >
               <li>
                 <a
@@ -344,13 +350,14 @@ const Header: Component = () => {
               <li class="pt-2 mt-2 border-t border-green-100">
                 <div class="flex justify-center gap-6">
                   <a
-                    href="https://instagram.com"
+                    href="https://instagram.com/minttcoffee"
                     target="_blank"
                     rel="noopener"
                     aria-label="Instagram"
                   >
                     <svg
-                      class="w-6 h-6 text-green-800 hover:text-green-900"
+                      class="w-6 h-6"
+                      style="color: #8E9375;"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -365,27 +372,13 @@ const Header: Component = () => {
                     aria-label="Telegram"
                   >
                     <svg
-                      class="w-6 h-6 text-green-800 hover:text-green-900"
+                      class="w-6 h-6"
+                      style="color: #8E9375;"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
                     >
                       <path d="M9.04 15.72 8.9 20a1 1 0 0 0 1.62.78l2.33-1.85 4.83 3.52a1 1 0 0 0 1.56-.62l3.7-16.05a1 1 0 0 0-1.37-1.15L1.5 10.06a1 1 0 0 0 .06 1.88l6.2 2.18 10.24-9.16-8.96 10.76z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://wa.me/989123456789"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="WhatsApp"
-                  >
-                    <svg
-                      class="w-6 h-6 text-green-800 hover:text-green-900"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.01 0C5.38 0 .01 5.37.01 11.99c0 2.11.55 4.19 1.6 6.02L0 24l6.14-1.6a12 12 0 0 0 5.86 1.5h.01c6.63 0 12-5.37 12-11.99 0-3.2-1.25-6.21-3.49-8.43zM12 21.06h-.01a9.95 9.95 0 0 1-5.06-1.39l-.36-.21-3.64.95.97-3.55-.23-.37A9.94 9.94 0 1 1 22 12.01c0 5.48-4.46 9.94-10 9.94zm5.73-7.46c-.31-.16-1.84-.9-2.13-1s-.5-.16-.72.16-.82 1-.99 1.2-.36.24-.67.08-1.31-.48-2.5-1.52c-.92-.82-1.54-1.84-1.72-2.15s0-.48.15-.64c.15-.16.34-.4.5-.6.16-.2.21-.36.32-.6.1-.24.05-.44-.03-.6-.08-.16-.72-1.73-.98-2.37-.26-.64-.52-.55-.72-.56l-.62-.01c-.2 0-.52.08-.8.36s-1.05 1.03-1.05 2.5 1.08 2.9 1.24 3.1c.15.2 2.13 3.25 5.17 4.56.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.2-.59-.36z" />
                     </svg>
                   </a>
                 </div>
@@ -394,7 +387,10 @@ const Header: Component = () => {
           )}
         </div>
       </nav>
-      <div class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-green-700 z-10">
+      <div
+        class="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center z-10"
+        style="color: #8E9375;"
+      >
         <img src={Logo} alt="Mint Cafe Logo" class="max-w-64 animate-bounce" />
         <h1 class="text-5xl md:text-7xl font-extrabold fade-in">کافه نعنا</h1>
         <p class="text-xl md:text-2xl mt-4 fade-in">
@@ -402,23 +398,26 @@ const Header: Component = () => {
         </p>
         <a
           href="#menu"
-          class="mt-6 px-8 py-3 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold hover-scale"
+          class="mt-6 px-8 py-3 text-white rounded-full font-semibold hover-scale"
+          style="background-color: #8E9375;"
         >
           مشاهده منو
         </a>
         <div class="mt-6 relative inline-block">
           <button
             id="order-button"
-            class="px-8 py-3 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white rounded-full font-semibold cursor-pointer hover-scale animate-mint-pulse shadow-lg"
+            class="px-8 py-3 hover:from-cyan-800 text-white rounded-full font-semibold cursor-pointer hover-scale animate-mint-pulse shadow-lg"
             aria-haspopup="menu"
             aria-expanded="false"
             aria-controls="dropdown-menu"
+            style="background-color: #8E9375;"
           >
             سفارش آنلاین
           </button>
           <div
             id="dropdown-menu"
-            class="dropdown-menu hidden absolute right-0 top-full mt-2 md:right-full md:top-0 md:mt-0 md:mr-4 bg-white p-4 rounded-lg shadow-xl text-green-700 flex flex-col space-y-2 min-w-max"
+            class="dropdown-menu hidden absolute right-0 top-full mt-2 md:right-full md:top-0 md:mt-0 md:mr-4 bg-white p-4 rounded-lg shadow-xl flex flex-col space-y-2 min-w-max"
+            style="color: #8E9375;"
             role="menu"
           >
             <a
@@ -438,13 +437,14 @@ const Header: Component = () => {
         <div class="pt-2 mt-2 border-t border-green-100">
           <div class="flex items-center gap-3">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/minttcoffee"
               target="_blank"
               rel="noopener"
               aria-label="Instagram"
             >
               <svg
-                class="w-7 h-7 text-green-700 hover:text-green-900"
+                class="w-7 h-7"
+                style="color: #8E9375;"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -459,27 +459,13 @@ const Header: Component = () => {
               aria-label="Telegram"
             >
               <svg
-                class="w-7 h-7 text-green-700 hover:text-green-900"
+                class="w-7 h-7"
+                style="color: #8E9375;"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
                 <path d="M9.04 15.72 8.9 20a1 1 0 0 0 1.62.78l2.33-1.85 4.83 3.52a1 1 0 0 0 1.56-.62l3.7-16.05a1 1 0 0 0-1.37-1.15L1.5 10.06a1 1 0 0 0 .06 1.88l6.2 2.18 10.24-9.16-8.96 10.76z" />
-              </svg>
-            </a>
-            <a
-              href="https://wa.me/989123456789"
-              target="_blank"
-              rel="noopener"
-              aria-label="WhatsApp"
-            >
-              <svg
-                class="w-7 h-7 text-green-700 hover:text-green-900"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M20.52 3.48A11.86 11.86 0 0 0 12.01 0C5.38 0 .01 5.37.01 11.99c0 2.11.55 4.19 1.6 6.02L0 24l6.14-1.6a12 12 0 0 0 5.86 1.5h.01c6.63 0 12-5.37 12-11.99 0-3.2-1.25-6.21-3.49-8.43zM12 21.06h-.01a9.95 9.95 0 0 1-5.06-1.39l-.36-.21-3.64.95.97-3.55-.23-.37A9.94 9.94 0 1 1 22 12.01c0 5.48-4.46 9.94-10 9.94zm5.73-7.46c-.31-.16-1.84-.9-2.13-1s-.5-.16-.72.16-.82 1-.99 1.2-.36.24-.67.08-1.31-.48-2.5-1.52c-.92-.82-1.54-1.84-1.72-2.15s0-.48.15-.64c.15-.16.34-.4.5-.6.16-.2.21-.36.32-.6.1-.24.05-.44-.03-.6-.08-.16-.72-1.73-.98-2.37-.26-.64-.52-.55-.72-.56l-.62-.01c-.2 0-.52.08-.8.36s-1.05 1.03-1.05 2.5 1.08 2.9 1.24 3.1c.15.2 2.13 3.25 5.17 4.56.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.2-.59-.36z" />
               </svg>
             </a>
           </div>

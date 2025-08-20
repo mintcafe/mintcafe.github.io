@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const tiles = [
   {
-    title: "لاته نعناع",
+    title: "لاته نعنا",
     emoji: "🥤",
     gradient: "from-emerald-200 to-green-100",
   },
