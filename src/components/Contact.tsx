@@ -27,7 +27,7 @@ const Contact: Component = () => {
           </p>
           <div class="flex gap-4 mt-2">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/minttcoffee"
               target="_blank"
               rel="noopener"
               class="text-green-700 hover:text-green-900"
@@ -35,7 +35,7 @@ const Contact: Component = () => {
               اینستاگرام
             </a>
             <a
-              href="https://t.me"
+              href="https://t.me/mintplaylist"
               target="_blank"
               rel="noopener"
               class="text-green-700 hover:text-green-900"

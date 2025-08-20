@@ -243,7 +243,7 @@ const Header: Component = () => {
             <div class="w-px h-6 bg-white/30"></div>
             <div class="flex items-center gap-4">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/minttcoffee"
                 target="_blank"
                 rel="noopener"
                 class="hover:text-green-950"
@@ -259,7 +259,7 @@ const Header: Component = () => {
                 </svg>
               </a>
               <a
-                href="https://t.me"
+                href="https://t.me/mintplaylist"
                 target="_blank"
                 rel="noopener"
                 class="hover:text-green-950"
@@ -272,22 +272,6 @@ const Header: Component = () => {
                   aria-hidden="true"
                 >
                   <path d="M9.04 15.72 8.9 20a1 1 0 0 0 1.62.78l2.33-1.85 4.83 3.52a1 1 0 0 0 1.56-.62l3.7-16.05a1 1 0 0 0-1.37-1.15L1.5 10.06a1 1 0 0 0 .06 1.88l6.2 2.18 10.24-9.16-8.96 10.76z" />
-                </svg>
-              </a>
-              <a
-                href="https://wa.me/989123456789"
-                target="_blank"
-                rel="noopener"
-                class="hover:text-green-950"
-                aria-label="WhatsApp"
-              >
-                <svg
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M20.52 3.48A11.86 11.86 0 0 0 12.01 0C5.38 0 .01 5.37.01 11.99c0 2.11.55 4.19 1.6 6.02L0 24l6.14-1.6a12 12 0 0 0 5.86 1.5h.01c6.63 0 12-5.37 12-11.99 0-3.2-1.25-6.21-3.49-8.43zM12 21.06h-.01a9.95 9.95 0 0 1-5.06-1.39l-.36-.21-3.64.95.97-3.55-.23-.37A9.94 9.94 0 1 1 22 12.01c0 5.48-4.46 9.94-10 9.94zm5.73-7.46c-.31-.16-1.84-.9-2.13-1s-.5-.16-.72.16-.82 1-.99 1.2-.36.24-.67.08-1.31-.48-2.5-1.52c-.92-.82-1.54-1.84-1.72-2.15s0-.48.15-.64c.15-.16.34-.4.5-.6.16-.2.21-.36.32-.6.1-.24.05-.44-.03-.6-.08-.16-.72-1.73-.98-2.37-.26-.64-.52-.55-.72-.56l-.62-.01c-.2 0-.52.08-.8.36s-1.05 1.03-1.05 2.5 1.08 2.9 1.24 3.1c.15.2 2.13 3.25 5.17 4.56.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.2-.59-.36z" />
                 </svg>
               </a>
             </div>
@@ -366,7 +350,7 @@ const Header: Component = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://t.me"
+                    href="https://t.me/mintplaylist"
                     target="_blank"
                     rel="noopener"
                     aria-label="Telegram"
@@ -453,7 +437,7 @@ const Header: Component = () => {
               </svg>
             </a>
             <a
-              href="https://t.me"
+              href="https://t.me/mintplaylist"
               target="_blank"
               rel="noopener"
               aria-label="Telegram"
