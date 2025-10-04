@@ -9,8 +9,9 @@
 		{ "title": "تست شکلات", "description": "", "image": "toast.png", "price": 150 }
 	],
 	"hotcoffee": [
-		{ "title": "اسپرسو لاین روبوستا", "description": "", "image": "esspreso.png", "price": 80 },
-		{ "title": "اسپرسو لاین عربیکا", "description": "", "image": "esspreso.png" , "price": 80},
+		{ "title": "اسپرسو 70-30", "description": "", "image": "esspreso.png", "price": 80 },
+		{ "title": "اسپرسو فول کافئین", "description": "", "image": "esspreso.png" , "price": 80},
+		{ "title": "اسپرسو فول کافئین نعنا", "description": "", "image": "esspreso.png" , "price": 125},
 		{ "title": "اسپرسو رومانو", "description": "", "image": "romano.png", "price": 90 },
 		{ "title": "هانی اسپرسو", "description": "", "image": "honey.jpg", "price": 90 },
 		{ "title": "کورتادو", "description": "", "image": "cortado.jpg", "price": 100 },
