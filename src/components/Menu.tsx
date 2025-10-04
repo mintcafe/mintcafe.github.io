@@ -16,7 +16,12 @@ const resolveItemImageUrl = (filename: string): string | undefined => {
   return match ? match[1] : undefined;
 };
 
-type MenuItem = { title: string; description: string; image: string };
+type MenuItem = {
+  title: string;
+  description: string;
+  image: string;
+  price: number;
+};
 
 const Menu: Component = () => {
   const [activeTab, setActiveTab] = createSignal<
@@ -134,6 +139,9 @@ const Menu: Component = () => {
                 )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
+                <p class="mt-1" style="color: #8E9375;">
+                  {item.price},000 تومان
+                </p>
               </div>
             )}
           </For>
@@ -157,6 +165,9 @@ const Menu: Component = () => {
                 )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
+                <p class="mt-1" style="color: #8E9375;">
+                  {item.price},000 تومان
+                </p>
               </div>
             )}
           </For>
@@ -180,6 +191,9 @@ const Menu: Component = () => {
                 )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
+                <p class="mt-1" style="color: #8E9375;">
+                  {item.price},000 تومان
+                </p>
               </div>
             )}
           </For>
@@ -203,6 +217,9 @@ const Menu: Component = () => {
                 )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
+                <p class="mt-1" style="color: #8E9375;">
+                  {item.price},000 تومان
+                </p>
               </div>
             )}
           </For>
@@ -226,6 +243,9 @@ const Menu: Component = () => {
                 )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
+                <p class="mt-1" style="color: #8E9375;">
+                  {item.price},000 تومان
+                </p>
               </div>
             )}
           </For>
@@ -249,6 +269,9 @@ const Menu: Component = () => {
                 )}
                 <h3 class="text-xl font-bold text-green-900">{item.title}</h3>
                 <p class="text-gray-600 mt-1">{item.description}</p>
+                <p class="mt-1" style="color: #8E9375;">
+                  {item.price},000 تومان
+                </p>
               </div>
             )}
           </For>
