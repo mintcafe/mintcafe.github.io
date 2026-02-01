@@ -1,0 +1,10 @@
+{ "title": "املت قارچ و اسفناج", "description": "", "image": "omlet2.png", "price": 195 },
+
+{ "title": "آش رشته", "description": "", "image": "Ash-Reshteh-Persian-Noodle-Soup.jpg", "price": 140 },
+{ "title": "لوبیا", "description": "", "image": "56459rspa.jpg", "price": 140 },
+{ "title": "عدسی", "description": "", "image": "persian-lentil-soup.jpg", "price": 140 }
+
+{ "title": "موهیتو", "description": "", "image": "drink-8.jpg", "price": 200 },
+{ "title": "رد موهیتو", "description": "", "image": "365574_319.webp", "price": 220 }
+
+{ "title": "چیزکیک سن بری", "description": "", "image": "san-sebastian-cheesecake-with-berries-black-plate_711700-5962.avif", "price": 150 },
